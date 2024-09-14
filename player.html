@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Music Player</title>
+    <link rel="stylesheet" href="CSS/styles.css">
+</head>
+<body>
+    <header>
+        <nav>
+            <div class="logo-container">
+                <img src="Images/Logo.png" alt="Logo" class="logo">
+                <span class="music-player-name">My Music Player</span>
+            </div>
+            <ul>
+                <li><a href="index.html">Home</a></li>
+                <li><a href="songs.html">Songs List</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <br>
+
+    <main>
+
+        <div class="player">
+            <div class="info">
+                <div id="title">Song Title</div><br>
+                <div id="artist">Artist</div>
+            </div>
+
+            <br>
+
+            <audio id="audio" controls>
+                Your browser does not support the audio element.
+            </audio>
+
+           <br>
+
+            <div class="controls">
+                <button id="rewind">Rewind</button>
+                <button id="play-pause">Play</button>
+                <button id="stop">Stop</button>
+                <button id="forward">Forward</button>
+                <button id="repeat">Repeat</button><br><br>
+                <button id="lyrics">Show Lyrics</button>
+            </div>
+        </div>
+
+        <br>
+
+        <div id="lyrics-popup" class="popup">
+            <div class="popup-content">
+                <span class="close" id="close-lyrics">&times;</span>
+                <h2 id="lyrics-title">Lyrics</h2>
+                <p id="lyrics-text">No lyrics available.</p>
+            </div>
+        </div>
+
+    </main>
+
+    <footer>
+        <p>&copy; 2024 My Music Player. All rights reserved.</p>
+    </footer>
+
+    <script src="JavaScript/script.js"></script>
+
+</body>
+</html>
